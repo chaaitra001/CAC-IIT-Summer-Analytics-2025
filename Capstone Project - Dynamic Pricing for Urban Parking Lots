@@ -1,1 +1,57 @@
+# Capstone Project: Dynamic Pricing for Urban Parking Lots
+
+This project implements a dynamic pricing model for urban parking lots, using simulation and data analysis to optimize pricing strategies. It includes simulations with [Pathway](https://pathway.com/), data manipulation with Pandas and NumPy, and visualizations built using Bokeh. 
+Developed in Google Colab for ease of collaboration and reproducibility.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Programming Language**: Python 3
+- **Development Environment**: Google Colab
+- **Libraries & Frameworks**:
+  - [pandas](https://pandas.pydata.org/): data manipulation
+  - [numpy](https://numpy.org/): numerical computation
+  - [pathway](https://pathway.com/): simulation of demand and pricing pipeline
+  - [bokeh](https://bokeh.org/): interactive visualisation
+
+---
+
+## 📈 Project Architecture
+
+Below is a high-level overview of how the components interact:
+
+1. **Data Preparation**  
+   - Load and preprocess historical parking demand data (synthetic or real).
+   - Feature engineering for time of day, day of week, etc.
+
+2. **Simulation Pipeline (Pathway)**
+   - Simulate demand under different pricing strategies.
+   - Model feedback loop between price changes and occupancy levels.
+
+3. **Pricing Algorithm**
+   - Dynamic pricing logic (e.g. demand-based adjustments, time-of-day pricing).
+   - Integration with simulation to evaluate strategy performance.
+
+4. **Visualisation (Bokeh)**
+   - Interactive plots for occupancy vs price.
+   - Time series of revenue and utilization rates.
+
+5. **Analysis & Insights**
+   - Summarise key findings.
+   - Recommend pricing strategies based on simulation results.
+
+---
+
+## 📊 Architecture Diagram
+
+Below is a conceptual architecture diagram:
+
+```mermaid
+flowchart TD
+    A[Data Ingestion] --> B[Data Preparation]
+    B --> C[Simulation with Pathway]
+    C --> D[Dynamic Pricing Algorithm using Pandas]
+    D --> C
+    D --> E[Bokeh Visualisation]
 
