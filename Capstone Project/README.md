@@ -42,6 +42,9 @@ We develop three models with increasing complexity:
    
 -> Comparison graphs across all three models.
 
+## Architecture Diagram
+![Architecture Diagram](oopsies)
+
 ## How to run this notebook
 1. Open the notebook in Google Colab.
 2. Install required packages (Pathway, Bokeh, Pandas).
