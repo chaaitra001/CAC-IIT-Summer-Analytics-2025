@@ -22,11 +22,13 @@ We develop three models with increasing complexity:
  
 ## Architecture Flow
 1. **Data Preparation & Ingestion**
+
 -> The dataset contains time-stamped occupancy, queue, traffic, vehicle type, special day, and location.
    
 -> Ingested using Pathway for real-time streaming simulation.
 
 3. **Pricing Algorithm**
+
 -> Dynamic pricing logic for each model
    - for Model 1, we use: Price_t+1 = Price_t + α · (Occupancy/Capacity)
    - for Model 2, we use: Price_t = BasePrice · (1 + λ · NormalizedDemand); and also normalise the demand value through an example function (Demand = α· (Occupancy/Capacity) + β·QueueLength − γ·Traffic + δ·IsSpecialDay + ε·VehicleTypeWeight)
@@ -35,6 +37,7 @@ We develop three models with increasing complexity:
 -> Integration with simulation to evaluate strategy performance.
 
 4. **Visualisation using Bokeh**
+
 -> Created interactive time-series plots.
    
 -> Comparison graphs across all three models.
